@@ -27,7 +27,7 @@ function CustomNavbar() {
         <div className="font-bold text-xl mt-[-3px]">Эко-Терра</div>
         <div className="flex gap-2">
           {menuItems.map((x) => (
-            <div>{x}</div>
+            <div key={x}>{x}</div>
           ))}
         </div>
         {/**<a href="tel:+ 7 (800) 555-14-08" className="bg-green-400 rounded-xl p-2 text-white">+ 7 (800) 555-14-08</a> */}

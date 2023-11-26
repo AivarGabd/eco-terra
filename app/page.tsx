@@ -89,10 +89,11 @@ export default function Home() {
             ЖИВОТНОВОДСТВА?
           </div>
           <div className="flex gap-3 mt-2">
-            {kakPerevestiList.map((x) => (
-              <div className="flex flex-col gap-2">
+            {kakPerevestiList.map((x,index) => (
+              <div className="flex flex-col gap-2" key={index}>
                 {x.map((item) => (
                   <div
+                  key={item}
                     dangerouslySetInnerHTML={{ __html: item }}
                     className="bg-white px-2 py-3 rounded-lg w-[550px] text"
                   />
@@ -136,10 +137,14 @@ export default function Home() {
                 "Разработка системы расчета норм, доз и сроков внесения органического удобрения по различные виды сельскохозяйственных культур для повышения урожайности.",
                 "Подготовка документов для положительного заключения экспертизы РСХН на площадку производства удобрений",
               ],
-            ].map((x) => (
-              <div className="w-[100%] flex flex-col gap-2">
+            ].map((x,index) => (
+              <div 
+              key={index}
+              className="w-[100%] flex flex-col gap-2">
                 {x.map((item) => (
-                  <div className="text px-3 py-2 bg-white rounded-lg">
+                  <div 
+                  key={item}
+                  className="text px-3 py-2 bg-white rounded-lg">
                     {item}
                   </div>
                 ))}
@@ -163,10 +168,14 @@ export default function Home() {
                 "Консультации по всем вопросам охраны окружающей среды входят в стоимость обслуживания",
                 "Выкуп готовой продукции (помощь в реализации) у производителя с последующей реализацией",
               ],
-            ].map((x) => (
-              <div className="w-[100%] flex flex-col gap-2">
+            ].map((x,index) => (
+              <div 
+              key={index}
+              className="w-[100%] flex flex-col gap-2">
                 {x.map((item) => (
-                  <div className="text px-3 py-2 bg-white rounded-lg">
+                  <div
+                  key={item} 
+                  className="text px-3 py-2 bg-white rounded-lg">
                     {item}
                   </div>
                 ))}
