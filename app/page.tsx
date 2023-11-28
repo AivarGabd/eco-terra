@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <CustomNavbar />
-      <main className="flex min-h-screen flex-col items-center p-14 max-w-7xl m-auto gap-10 mt-5">
+      <main className="flex min-h-screen flex-col items-center p-14 max-w-7xl m-auto gap-10 mt-12">
         <div className="flex flex-col gap-1" id="section-0">
           <div className="header">
             ЭКОЛОГИЧЕСКИЙ КОНСАЛТИНГ ДЛЯ СЕЛЬХОЗПРОИЗВОДИТЕЛЕЙ
